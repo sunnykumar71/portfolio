@@ -25,7 +25,7 @@ const Projects = () => {
       tech: ["React.js", "CSS"],
       category: "Frontend",
       github: "https://github.com/sunnykumar71/Todo-List",
-      live: "#",
+      live: null,
       color: "from-purple-500 to-pink-500",
     },
     {
@@ -35,7 +35,7 @@ const Projects = () => {
       tech: ["React Native", "Expo"],
       category: "Mobile",
       github: "https://github.com/sunnykumar71/expo-todo-app",
-      live: "#",
+      live: null,
       color: "from-green-500 to-emerald-500",
     },
     {
@@ -45,7 +45,7 @@ const Projects = () => {
       tech: ["Java", "Spring Boot", "MySQL"],
       category: "Full Stack",
       github: "https://github.com/sunnykumar71/musify-fullstack",
-      live: "#",
+      live: null,
       color: "from-orange-500 to-red-500",
     },
   ];
@@ -84,10 +84,11 @@ const Projects = () => {
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`px-5 py-2 rounded-full font-medium transition-all duration-300 ${activeFilter === filter
+              className={`px-5 py-2 rounded-full font-medium transition-all duration-300 ${
+                activeFilter === filter
                   ? "bg-blue-500 text-white shadow-lg shadow-blue-500/30"
                   : "bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white"
-                }`}
+              }`}
             >
               {filter}
             </button>
@@ -107,12 +108,11 @@ const Projects = () => {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="glass-card project-card p-6 relative overflow-hidden group"
               >
-                {/* Gradient Top Border */}
+                {/* Gradient Border */}
                 <div
                   className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${project.color}`}
                 />
 
-                {/* Content */}
                 <div className="relative z-10">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
@@ -149,7 +149,8 @@ const Projects = () => {
                     >
                       <FaGithub /> GitHub
                     </a>
-                    {project.live !== "#" && (
+
+                    {project.live && (
                       <a
                         href={project.live}
                         target="_blank"
