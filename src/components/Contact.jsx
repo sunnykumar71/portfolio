@@ -24,7 +24,7 @@ const Contact = () => {
       label: "Resume",
       value: "Download Resume",
       href: resume,
-      download: "Sunny_Kumar_Resume.pdf",
+      download: "resume_sunny.pdf",
     },
     {
       icon: <FaEnvelope className="contact-icon text-green-400" />,
