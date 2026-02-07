@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaFilePdf, FaEnvelope, FaPhone } from "react-icons/fa";
-import resume from "../assets/resume_sunny.pdf";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFilePdf,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa";
 
 const Contact = () => {
   const contactItems = [
@@ -23,8 +28,8 @@ const Contact = () => {
       icon: <FaFilePdf className="contact-icon text-red-400" />,
       label: "Resume",
       value: "Download Resume",
-      href: resume,
-      download: "resume_sunny.pdf",
+      href: "/resume_sunny.pdf",
+      download: true,
     },
     {
       icon: <FaEnvelope className="contact-icon text-green-400" />,
@@ -43,6 +48,7 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen px-6 py-24 bg-gray-900">
       <div className="max-w-6xl mx-auto">
+
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -81,7 +87,7 @@ const Contact = () => {
           ))}
         </div>
 
-        {/* Additional CTA */}
+        {/* Email CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
