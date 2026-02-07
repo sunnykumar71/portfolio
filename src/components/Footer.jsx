@@ -71,9 +71,9 @@ const Footer = () => {
               <FaEnvelope size={20} />
             </a>
 
-            {/* Download Resume */}
+            {/* Resume (served from /public) */}
             <a
-              href="https://drive.google.com/uc?export=download&id=1znWrLsB3IuNiY3JhbZyl-oZ3Hz8fsqMH"
+              href="/resume_sunny.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all text-sm"
