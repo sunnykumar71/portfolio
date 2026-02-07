@@ -1,6 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp, FaHeart } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaArrowUp,
+  FaHeart,
+  FaDownload,
+} from "react-icons/fa";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -13,6 +20,7 @@ const Footer = () => {
     <footer className="bg-gray-950 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+
           {/* Logo & Copyright */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +38,7 @@ const Footer = () => {
             </p>
           </motion.div>
 
-          {/* Social Links */}
+          {/* Social + Resume */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -46,6 +54,7 @@ const Footer = () => {
             >
               <FaGithub size={20} />
             </a>
+
             <a
               href="https://www.linkedin.com/in/sunny-kumar-53a6bb2a7/"
               target="_blank"
@@ -54,11 +63,23 @@ const Footer = () => {
             >
               <FaLinkedin size={20} />
             </a>
+
             <a
               href="mailto:sunnymagnaxl@gmail.com"
               className="p-2 text-gray-400 hover:text-green-400 transition-colors"
             >
               <FaEnvelope size={20} />
+            </a>
+
+            {/* Download Resume */}
+            <a
+              href="https://drive.google.com/uc?export=download&id=1znWrLsB3IuNiY3JhbZyl-oZ3Hz8fsqMH"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all text-sm"
+            >
+              <FaDownload size={14} />
+              Resume
             </a>
           </motion.div>
 
@@ -74,6 +95,7 @@ const Footer = () => {
             <FaArrowUp size={14} />
             <span className="text-sm">Back to top</span>
           </motion.button>
+
         </div>
       </div>
     </footer>
