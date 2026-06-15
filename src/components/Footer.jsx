@@ -56,7 +56,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/sunny-kumar-53a6bb2a7/"
+              href="https://www.linkedin.com/in/sunny-kumar-159080416"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-400 hover:text-blue-400 transition-colors"
@@ -65,7 +65,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="mailto:sunnymagnaxl@gmail.com"
+              href="mailto:sunnykumar.fusion@gmail.com"
               className="p-2 text-gray-400 hover:text-green-400 transition-colors"
             >
               <FaEnvelope size={20} />
@@ -73,7 +73,7 @@ const Footer = () => {
 
             {/* Resume (served from /public) */}
             <a
-              href="/resume_sunny.pdf"
+              href="/Sunny_Kumar_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all text-sm"
