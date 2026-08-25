@@ -72,7 +72,7 @@ const Home = () => {
             transition={{ delay: 0.7 }}
             className="flex flex-wrap gap-3 justify-center lg:justify-start mb-8"
           >
-            {["Java", "Spring Boot", "React", "React Native"].map((tech, i) => (
+            {["Java", "Spring Boot", "React Js"].map((tech, i) => (
               <span
                 key={tech}
                 className="px-4 py-2 glass-card text-sm font-medium text-gray-300"
@@ -127,7 +127,7 @@ const Home = () => {
               <FaGithub size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/sunny-kumar-53a6bb2a7/"
+              href="https://www.linkedin.com/in/sunny-kumar-159080416"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-card hover:text-blue-400 transition-colors"
@@ -135,7 +135,7 @@ const Home = () => {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="mailto:sunnymagnaxl@gmail.com"
+              href="mailto:sunnykumar.fusion@gmail.com"
               className="p-3 glass-card hover:text-blue-400 transition-colors"
             >
               <FaEnvelope size={20} />

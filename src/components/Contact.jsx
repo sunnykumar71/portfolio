@@ -20,13 +20,13 @@ const Contact = () => {
     {
       icon: <FaLinkedin className="contact-icon text-blue-500" />,
       label: "LinkedIn",
-      value: "sunny-kumar-53a6bb2a7",
+      value: "sunny-kumar-159080416",
       href: "https://www.linkedin.com/in/sunny-kumar-159080416",
       external: true,
     },
     {
       icon: <FaFilePdf className="contact-icon text-red-400" />,
-      label: "Resume",
+      label: "Sunny_Kumar_Resume",
       value: "Download Resume",
       href: "/Sunny_Kumar_Resume",
       download: true,
@@ -34,7 +34,7 @@ const Contact = () => {
     {
       icon: <FaEnvelope className="contact-icon text-green-400" />,
       label: "Email",
-      value: "sunnymagnaxl@gmail.com",
+      value: "sunnykumar.fusion@gmail.com",
       href: "mailto:sunnykumar.fusion@gmail.com",
     },
     {
@@ -99,7 +99,7 @@ const Contact = () => {
             Prefer email? Send me a message directly:
           </p>
           <a
-            href="mailto:sunnymagnaxl@gmail.com"
+            href="mailto:sunnykumar.fusion@gmail.com"
             className="btn-primary inline-flex"
           >
             <FaEnvelope />

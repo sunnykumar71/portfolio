@@ -29,7 +29,7 @@ const Skills = () => {
     {
       title: "Frontend",
       icon: <FaReact className="skill-icon text-cyan-400" />,
-      skills: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS", "Bootstrap"],
+      skills: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
       color: "from-cyan-500/20 to-blue-500/20",
     },
     {
@@ -41,25 +41,25 @@ const Skills = () => {
     {
       title: "Database",
       icon: <FaDatabase className="skill-icon text-yellow-400" />,
-      skills: ["MySQL", "MongoDB"],
+      skills: ["MySQL"],
       color: "from-yellow-500/20 to-orange-500/20",
     },
-    {
-      title: "Mobile Apps",
-      icon: <FaMobileAlt className="skill-icon text-purple-400" />,
-      skills: ["React Native", "Expo"],
-      color: "from-purple-500/20 to-pink-500/20",
-    },
+    // {
+    //   title: "Mobile Apps",
+    //   icon: <FaMobileAlt className="skill-icon text-purple-400" />,
+    //   skills: ["React Native", "Expo"],
+    //   color: "from-purple-500/20 to-pink-500/20",
+    // },
     {
       title: "Tools",
       icon: <FaGitAlt className="skill-icon text-orange-400" />,
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Docker", "AWS", "Firebase"],
+      skills: ["Git", "GitHub", "VS Code", "Postman", "Docker","AWS"],
       color: "from-orange-500/20 to-red-500/20",
     },
     {
       title: "Other",
       icon: <FaBrain className="skill-icon text-pink-400" />,
-      skills: ["Problem Solving", "DSA", "System Design"],
+      skills: ["Problem Solving", "Data Structure And Algorithm", "System Design"],
       color: "from-pink-500/20 to-rose-500/20",
     },
   ];
